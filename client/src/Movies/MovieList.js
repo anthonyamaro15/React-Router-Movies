@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
-import { useParams, NavLink, useRouteMatch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import axios from "axios";
 
-const MovieList = props => {
+const MovieList = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {

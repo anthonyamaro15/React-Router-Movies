@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useParams, NavLink, useRouteMatch } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import MovieCard from "./MovieCard";
 import axios from "axios";
 
 const Movie = props => {
   const [movie, setMovie] = useState();
   const { movieId } = useParams();
-  const { path, url } = useRouteMatch();
 
   useEffect(() => {
     const id = movieId;
